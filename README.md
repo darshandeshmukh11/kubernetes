@@ -4,3 +4,9 @@ Download the https://storage.googleapis.com/minikube/releases/latest/minikube-wi
 ```
 $ minikube start
 ```
+
+#### For Ubuntu
+Download the debian package from https://github.com/kubernetes/minikube/releases and run
+```
+$ sudo dpkg -i minikube_.deb
+```
