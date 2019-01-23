@@ -21,10 +21,13 @@ $ sudo dpkg -i minikube_.deb
 ```
 
 #### Some useful commands
-Expose pods - `kubectl expose pod nodehelloworld.example.com --type==NodePort`
-Expose service - `kubectl expose pod nodehelloworld.example.com --type==NodePort --name nodehelloworld-service`
-Enter into container shell - `kubectl run -i --tty busybox --image=busybox --restart=N`
-
+- Expose pods - `kubectl expose pod nodehelloworld.example.com --type==NodePort`
+- Expose service - `kubectl expose pod nodehelloworld.example.com --type==NodePort --name nodehelloworld-service`
+- Enter into container shell - `kubectl run -i --tty busybox --image=busybox --restart=N`
+- Debug pods
+`kubectl attach <podname> -i`
+`kubectl exec -it <podname> --bash`
+ 
 
 #### Resources
 1. Fundamentals of Kubernetes: https://lnkd.in/dY25fhp
