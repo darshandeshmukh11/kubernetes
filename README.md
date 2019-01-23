@@ -20,6 +20,12 @@ Download the debian package from https://github.com/kubernetes/minikube/releases
 $ sudo dpkg -i minikube_.deb
 ```
 
+#### Some useful commands
+Expose pods - `kubectl expose pod nodehelloworld.example.com --type==NodePort`
+Expose service - `kubectl expose pod nodehelloworld.example.com --type==NodePort --name nodehelloworld-service`
+Enter into container shell - `kubectl run -i --tty busybox --image=busybox --restart=N`
+
+
 #### Resources
 1. Fundamentals of Kubernetes: https://lnkd.in/dY25fhp
 
