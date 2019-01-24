@@ -27,6 +27,7 @@ $ sudo dpkg -i minikube_.deb
 - Debug pods
 `kubectl attach <podname> -i`
 `kubectl exec -it <podname> --bash`
+- Watch pods every n seconds `watch -n1 kubectl get pods`
  
 
 #### Resources
